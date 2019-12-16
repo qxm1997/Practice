@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{#{{ name }}单表查询单条数据#}
+{#查询Python入门的学生名单#}
+<{% comment %}ul>
+    {% for user in user_list %}
+        <li>{{ user.nickname }}</li>
+        <li>{{ user.email }}</li>
+
+    {% endfor %}
+</ul>
+{% endcomment %}
+
+{# 查看PHP入门课程哪些plan学#}
+{% comment %}
+<ul>
+    {% for php in php_plan %}
+        <li>{{ php.name }}</li>
+    {% endfor %}
+</ul
+{% endcomment %}>
+{##查看id为20的学生的plan#}
+{#{{ user }}#}
+
+#查看plan id为20的plan包含哪些lesson
+<ul>
+    {% for l1 in lesson %}
+        <li>{{ l1 }}</li>
+    {% endfor %}
+
+</ul>
+
+
+</body>
+</html>
